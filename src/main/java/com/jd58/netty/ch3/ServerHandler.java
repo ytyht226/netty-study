@@ -24,7 +24,6 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(final ChannelHandlerContext ctx, Object msg) throws Exception {
         super.channelRead(ctx, msg);
-
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -36,6 +35,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
                     @Override
                     public void run() {
                         // ...
+                        System.out.println(result);
                     }
                 }, 1, TimeUnit.SECONDS);
 

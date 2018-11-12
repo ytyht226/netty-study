@@ -27,6 +27,7 @@ public final class Server {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel ch) {
+                            System.out.println("childHandler...");
                             ch.pipeline().addLast(new AuthHandler());
                             //..
 
