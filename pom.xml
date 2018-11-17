@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <netty-all.version>4.1.6.Final</netty-all.version>
+        <netty-all.version>4.1.10.Final</netty-all.version>
     </properties>
 
 
@@ -44,7 +44,7 @@
                             <appendAssemblyId>false</appendAssemblyId>
                             <archive>
                                 <manifest>
-                                    <mainClass>com.jd58.netty.ch12.connection.Server</mainClass>
+                                    <mainClass>com.jd58.netty.sdx.ch12.connection.Server</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
@@ -65,7 +65,7 @@
                             <appendAssemblyId>false</appendAssemblyId>
                             <archive>
                                 <manifest>
-                                    <mainClass>com.jd58.netty.ch12.connection.Client</mainClass>
+                                    <mainClass>com.jd58.netty.sdx.ch12.connection.Client</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
