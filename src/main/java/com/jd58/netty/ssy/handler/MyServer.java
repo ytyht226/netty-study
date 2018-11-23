@@ -1,4 +1,4 @@
-package com.jd58.netty.ssy.secondexample;
+package com.jd58.netty.ssy.handler;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -17,7 +17,6 @@ public class MyServer {
         try {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
             serverBootstrap.group(bossGroup, workerGroup)
-                    .handler(new BossHandler())
                     .channel(NioServerSocketChannel.class)
                     .childHandler(new MyServerInitializer());
 
