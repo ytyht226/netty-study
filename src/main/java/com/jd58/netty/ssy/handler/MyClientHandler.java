@@ -20,7 +20,10 @@ public class MyClientHandler extends SimpleChannelInboundHandler<Long> {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        ctx.writeAndFlush(123456);
+        ctx.writeAndFlush(123456L);
+
+//        ctx.writeAndFlush(Unpooled.copiedBuffer("helloworld", Charset.forName("utf-8")));
+
     }
 
     @Override
