@@ -28,11 +28,11 @@ public final class Server {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel ch) {
-//                            ch.pipeline().addLast(new InBoundHandlerA());
+                            ch.pipeline().addLast(new InBoundHandlerA());
 //                            ch.pipeline().addLast(new InBoundHandlerB());
 //                            ch.pipeline().addLast(new InBoundHandlerC());
-                            ch.pipeline().addLast(new OutBoundHandlerA());
-                            ch.pipeline().addLast(new OutBoundHandlerC());
+//                            ch.pipeline().addLast(new OutBoundHandlerA());
+//                            ch.pipeline().addLast(new OutBoundHandlerC());
                             ch.pipeline().addLast(new OutBoundHandlerB());
                         }
                     });
